@@ -1,14 +1,16 @@
-import { Angular2StarterPage } from './app.po';
+import { AngularStarterPage } from './app.po';
 
-describe('angular2-starter App', () => {
-  let page: Angular2StarterPage;
+describe('angular-starter App', () => {
+  let page: AngularStarterPage;
 
   beforeEach(() => {
-    page = new Angular2StarterPage();
+    page = new AngularStarterPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display welcome message', done => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    page.getParagraphText()
+      .then(msg => expect(msg).toEqual('Welcome to app!!'))
+      .then(done, done.fail);
   });
 });
