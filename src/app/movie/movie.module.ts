@@ -1,13 +1,15 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MovieService } from './movie.service';
-import { MovieListComponent } from './movie-list/movie-list.component';
+import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
+import { MovieListComponent } from './movie-list/movie-list.component';
 import { MovieRoutes } from './movie.routes';
+import { MovieService } from './movie.service';
 
 @NgModule({
   imports: [
     CommonModule,
+    HttpModule,
     RouterModule.forChild(MovieRoutes)
   ],
   declarations: [
