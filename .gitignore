@@ -25,8 +25,7 @@
 !.vscode/extensions.json
 
 # Documentation
-/documentation
-/docs
+compodoc/
 
 # misc
 /.sass-cache
