@@ -1,4 +1,4 @@
-# Angular Starter
+# angular-starter
 
 > **Problem**
 > 
@@ -38,3 +38,7 @@ After cloning this repository, install the npm dependencies with:
     npm run build:docs
     
 For `ng` commands, run `ng help`.
+
+## Screenshot
+
+![](readme/assets/ghibli-list.png)
