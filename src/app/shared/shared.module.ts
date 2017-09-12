@@ -1,10 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { IconFilm } from 'angular-feather';
+
+
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: []
+  exports: [
+    IconFilm
+  ]
 })
 export class SharedModule { }

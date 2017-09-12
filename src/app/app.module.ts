@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { AppRoutes } from './app.routes';
 import { MovieModule } from './movie/movie.module';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { MovieModule } from './movie/movie.module';
   ],
   imports: [
     BrowserModule,
+    CoreModule,
     MovieModule,
     RouterModule.forRoot(AppRoutes)
   ],
